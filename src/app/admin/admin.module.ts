@@ -12,6 +12,8 @@ import { EditPageComponent } from './edit-page/edit-page.component';
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { ShareModule } from "../shared/shared.module";
 import { SearchPosts } from './shared/pipes/search.pipe';
+import { AlertComponent } from './shared/components/alert/alert.component';
+import { AlertService } from './shared/services/alert.service';
 
 @NgModule({
     declarations: [
@@ -20,7 +22,8 @@ import { SearchPosts } from './shared/pipes/search.pipe';
         DashboardPageComponent,
         CreatePageComponent,
         EditPageComponent,
-        SearchPosts
+        SearchPosts,
+        AlertComponent
     ],
     imports: [
         CommonModule,
@@ -41,7 +44,7 @@ import { SearchPosts } from './shared/pipes/search.pipe';
         ])
     ],
     exports: [RouterModule],
-    providers:[AuthGuard]
+    providers:[AuthGuard, AlertService]
 
 })
 
