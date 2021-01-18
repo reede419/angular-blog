@@ -11,6 +11,7 @@ import { CreatePageComponent } from './create-page/create-page.component';
 import { EditPageComponent } from './edit-page/edit-page.component';
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { ShareModule } from "../shared/shared.module";
+import { SearchPosts } from './shared/pipes/search.pipe';
 
 @NgModule({
     declarations: [
@@ -18,7 +19,8 @@ import { ShareModule } from "../shared/shared.module";
         LoginPageComponent,
         DashboardPageComponent,
         CreatePageComponent,
-        EditPageComponent
+        EditPageComponent,
+        SearchPosts
     ],
     imports: [
         CommonModule,
