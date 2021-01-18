@@ -6,7 +6,7 @@ import { Observable, Subject, throwError } from 'rxjs';
 import { catchError, tap } from 'rxjs/operators';
 
 
-@Injectable()
+@Injectable({providedIn: 'root'})
 // мы не пишем provideIn, потому что мы его зарегестрировали в
 // admin.module.ts в providers
 

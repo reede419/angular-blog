@@ -39,7 +39,7 @@ import { ShareModule } from "../shared/shared.module";
         ])
     ],
     exports: [RouterModule],
-    providers:[AuthService, AuthGuard]
+    providers:[AuthGuard]
 
 })
 
